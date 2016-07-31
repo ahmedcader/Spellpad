@@ -1,0 +1,286 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{547A1C3D-E5DE-409F-9DA2-1BC7B8708642}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Spellpad</RootNamespace>
+    <AssemblyName>Spellpad</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+    <UseVSHostingProcess>true</UseVSHostingProcess>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>Notepad.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup />
+  <PropertyGroup>
+    <TargetZone>LocalIntranet</TargetZone>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>false</GenerateManifests>
+  </PropertyGroup>
+  <PropertyGroup />
+  <PropertyGroup />
+  <PropertyGroup />
+  <PropertyGroup />
+  <ItemGroup>
+    <Reference Include="AppLimit.CloudComputing.SharpBox, Version=1.2.0.542, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Notepad\bin\Debug\AppLimit.CloudComputing.SharpBox.dll</HintPath>
+    </Reference>
+    <Reference Include="Ionic.Zip">
+      <HintPath>..\..\Notepad\bin\Debug\Ionic.Zip.dll</HintPath>
+    </Reference>
+    <Reference Include="MessageBoxManager">
+      <HintPath>.\MessageBoxManager.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.VisualStudio.QualityTools.UnitTestFramework, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+    <Reference Include="Newtonsoft.Json.Net40">
+      <HintPath>..\..\..\..\..\..\Desktop\Newtonsoft.Json.Net40.dll</HintPath>
+    </Reference>
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+    <Reference Include="PresentationFramework.Aero" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xaml" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="UIAutomationProvider" />
+    <Reference Include="WindowsBase" />
+    <Reference Include="WindowsFormsIntegration" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Classes\Ini.cs" />
+    <Compile Include="Classes\JsonClasses.cs" />
+    <Compile Include="Classes\MruMenu.cs" />
+    <Compile Include="Classes\Variables.cs" />
+    <Compile Include="ElementHost Controls\Combobox.xaml.cs">
+      <DependentUpon>Combobox.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmWhatsNew.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmWhatsNew.Designer.cs">
+      <DependentUpon>frmWhatsNew.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frm_About.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frm_About.Designer.cs">
+      <DependentUpon>frm_About.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frm_Downloading.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frm_Downloading.Designer.cs">
+      <DependentUpon>frm_Downloading.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frm_EditDictionary.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frm_EditDictionary.Designer.cs">
+      <DependentUpon>frm_EditDictionary.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frm_EditRecents.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frm_EditRecents.Designer.cs">
+      <DependentUpon>frm_EditRecents.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frm_EditSymbols.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frm_EditSymbols.Designer.cs">
+      <DependentUpon>frm_EditSymbols.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frm_FindReplace.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frm_FindReplace.Designer.cs">
+      <DependentUpon>frm_FindReplace.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frm_Insert.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frm_Insert.Designer.cs">
+      <DependentUpon>frm_Insert.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frm_Main.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frm_Main.Designer.cs">
+      <DependentUpon>frm_Main.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frm_RenameDictionary.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frm_RenameDictionary.Designer.cs">
+      <DependentUpon>frm_RenameDictionary.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frm_Settings.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frm_Settings.Designer.cs">
+      <DependentUpon>frm_Settings.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frm_Updates.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frm_Updates.Designer.cs">
+      <DependentUpon>frm_Updates.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frm_Feedback.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frm_Feedback.Designer.cs">
+      <DependentUpon>frm_Feedback.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="ElementHost Controls\richTextBox.xaml.cs">
+      <DependentUpon>richTextBox.xaml</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Forms\frmWhatsNew.resx">
+      <DependentUpon>frmWhatsNew.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frm_About.resx">
+      <DependentUpon>frm_About.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frm_Downloading.resx">
+      <DependentUpon>frm_Downloading.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frm_EditDictionary.resx">
+      <DependentUpon>frm_EditDictionary.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frm_EditRecents.resx">
+      <DependentUpon>frm_EditRecents.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frm_EditSymbols.resx">
+      <DependentUpon>frm_EditSymbols.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frm_FindReplace.resx">
+      <DependentUpon>frm_FindReplace.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frm_Insert.resx">
+      <DependentUpon>frm_Insert.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frm_Main.resx">
+      <DependentUpon>frm_Main.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frm_RenameDictionary.resx">
+      <DependentUpon>frm_RenameDictionary.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frm_Settings.resx">
+      <DependentUpon>frm_Settings.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frm_Updates.resx">
+      <DependentUpon>frm_Updates.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frm_Feedback.resx">
+      <DependentUpon>frm_Feedback.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <None Include="app.config" />
+    <None Include="Properties\app.manifest" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tools.png" />
+    <None Include="Resources\Icons\page_saveas.png" />
+    <None Include="Resources\Icons\page_saveas_s.png" />
+    <None Include="Resources\Icons\page_save_s.png" />
+    <None Include="Resources\Icons\replace_s.png" />
+    <None Include="Resources\Icons\replace.png" />
+    <None Include="Resources\Icons\find_s.png" />
+    <None Include="Resources\Icons\folder_page_s.png" />
+    <None Include="Resources\Icons\cut_s.png" />
+    <None Include="Resources\Icons\arrow_undo_s.png" />
+    <None Include="Resources\Icons\arrow_redo_s.png" />
+    <None Include="Resources\Icons\page_paste_s.png" />
+    <None Include="Resources\Icons\page_copy_s.png" />
+    <None Include="Resources\Icons\page_add_s.png" />
+    <None Include="Resources\Icons\page_add.png" />
+    <None Include="Resources\Icons\page_paste.png" />
+    <None Include="Resources\Icons\page_copy.png" />
+    <None Include="Resources\Icons\folder_page.png" />
+    <None Include="Resources\Icons\find.png" />
+    <None Include="Resources\Icons\cut.png" />
+    <None Include="Resources\Icons\arrow_undo.png" />
+    <None Include="Resources\Icons\arrow_redo.png" />
+    <None Include="Resources\Icons\page_save.png" />
+    <Content Include="Notepad.ico" />
+    <Content Include="Resources\ClearIcon.png" />
+    <EmbeddedResource Include="Resources\ToolStripOpen.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Page Include="ElementHost Controls\Combobox.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="ElementHost Controls\richTextBox.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
