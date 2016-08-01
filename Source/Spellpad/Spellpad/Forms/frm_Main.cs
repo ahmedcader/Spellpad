@@ -2120,7 +2120,7 @@ namespace Spellpad.Forms.Spellpad_Forms
         {
             try
             {
-                HttpWebRequest update_versionRequest = (HttpWebRequest)WebRequest.Create("https://dl.dropboxusercontent.com/u/82716142/Spellpad%20Update%20Files/Update/Files/Main_Update.txt");
+                HttpWebRequest update_versionRequest = (HttpWebRequest)WebRequest.Create("https://dl.dropboxusercontent.com/u/82716142/Spellpad/Update/Main_Update.txt");
                 HttpWebResponse update_versionResponse = (HttpWebResponse)update_versionRequest.GetResponse();
                 StreamReader update_versionReader = new StreamReader(update_versionResponse.GetResponseStream());
                 string NewVersion = update_versionReader.ReadToEnd();
