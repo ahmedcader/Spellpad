@@ -181,7 +181,7 @@ namespace Spellpad.Forms
 
             try
             {
-                HttpWebRequest update_versionRequest = (HttpWebRequest)WebRequest.Create("https://dl.dropboxusercontent.com/u/82716142/Spellpad%20Update%20Files/Update/Files/Main_Update.txt");
+                HttpWebRequest update_versionRequest = (HttpWebRequest)WebRequest.Create("https://dl.dropboxusercontent.com/u/82716142/Spellpad/Update/Main_Update.txt");
                 HttpWebResponse update_versionResponse = (HttpWebResponse)update_versionRequest.GetResponse();
                 StreamReader update_versionReader = new StreamReader(update_versionResponse.GetResponseStream());
                 string NewVersion = update_versionReader.ReadToEnd();
@@ -263,54 +263,66 @@ namespace Spellpad.Forms
             }
             else if (btn_Check.Text == "Download")
             {
-                FolderBrowserDialog chooseDownloadLocation = new FolderBrowserDialog();
-                chooseDownloadLocation.Description = "Choose a location to save your update file.";
-                chooseDownloadLocation.ShowNewFolderButton = true;
-                if (chooseDownloadLocation.ShowDialog() == DialogResult.OK)
-                {
-                    if (File.Exists(chooseDownloadLocation.SelectedPath + @"\Spellpad Setup.exe"))
-                    {
-                        DialogResult downloadExisits = MessageBox.Show(string.Format("{0} detected another setup file in the same directory. Continuing to do so will overwrite the existing setup file in that directory. Continue?", ProductName), "Setup Exists", MessageBoxButtons.YesNo, MessageBoxIcon.Exclamation);
-                        if (downloadExisits == DialogResult.Yes)
-                        {
-                            ini_GlobalSettings.Write("Program", "Update_Location", chooseDownloadLocation.SelectedPath + @"\Spellpad Setup.exe");
-                            Variables.downloadLocation = ini_GlobalSettings.Read("Program", "Update_Location");
+                #region Currently No way of Downloading Updates Through Spellpad, Keep Disabled. LEGACY
+                //FolderBrowserDialog chooseDownloadLocation = new FolderBrowserDialog();
+                //chooseDownloadLocation.Description = "Choose a location to save your update file.";
+                //chooseDownloadLocation.ShowNewFolderButton = true;
+                //if (chooseDownloadLocation.ShowDialog() == DialogResult.OK)
+                //{
+                //    if (File.Exists(chooseDownloadLocation.SelectedPath + @"\Spellpad Setup.exe"))
+                //    {
+                //        DialogResult downloadExisits = MessageBox.Show(string.Format("{0} detected another setup file in the same directory. Continuing to do so will overwrite the existing setup file in that directory. Continue?", ProductName), "Setup Exists", MessageBoxButtons.YesNo, MessageBoxIcon.Exclamation);
+                //        if (downloadExisits == DialogResult.Yes)
+                //        {
+                //            ini_GlobalSettings.Write("Program", "Update_Location", chooseDownloadLocation.SelectedPath + @"\Spellpad Setup.exe");
+                //            Variables.downloadLocation = ini_GlobalSettings.Read("Program", "Update_Location");
 
-                            formMain.getUpdateInformation().UpdateLocation = chooseDownloadLocation.SelectedPath + @"\Spellpad Setup.exe";
-                            Variables.downloadLocation = formMain.getUpdateInformation().UpdateLocation;
+                //            formMain.getUpdateInformation().UpdateLocation = chooseDownloadLocation.SelectedPath + @"\Spellpad Setup.exe";
+                //            Variables.downloadLocation = formMain.getUpdateInformation().UpdateLocation;
 
-                            string jsonOutput = JsonConvert.SerializeObject(formMain.getUpdateInformation(), Formatting.Indented);
-                            using (StreamWriter writer = new StreamWriter(SettingsPath))
-                            {
-                                writer.Write(jsonOutput);
-                            }
+                //            string jsonOutput = JsonConvert.SerializeObject(formMain.getUpdateInformation(), Formatting.Indented);
+                //            using (StreamWriter writer = new StreamWriter(SettingsPath))
+                //            {
+                //                writer.Write(jsonOutput);
+                //            }
 
-                            _DownloadingDialog = new frm_Downloading(this);
-                            _DownloadingDialog.ShowDialog(this);
-                        }
-                        else if (downloadExisits == DialogResult.No)
-                        {
-                            btn_Check.PerformClick();
-                        }
-                    }
-                    else
-                    {
-                        ini_GlobalSettings.Write("Program", "Update_Location", chooseDownloadLocation.SelectedPath + @"\Spellpad Setup.exe");
-                        Variables.downloadLocation = ini_GlobalSettings.Read("Program", "Update_Location");
+                //            frm_GetSpellpad GetSpellpad = new frm_GetSpellpad();
+                //            GetSpellpad.ShowDialog();
 
-                        formMain.getUpdateInformation().UpdateLocation = chooseDownloadLocation.SelectedPath + @"\Spellpad Setup.exe";
-                        Variables.downloadLocation = formMain.getUpdateInformation().UpdateLocation;
+                //            _DownloadingDialog = new frm_Downloading(this);
+                //            _DownloadingDialog.ShowDialog(this);
+                //        }
+                //        else if (downloadExisits == DialogResult.No)
+                //        {
+                //            btn_Check.PerformClick();
+                //        }
+                //    }
+                //    else
+                //    {
+                //        ini_GlobalSettings.Write("Program", "Update_Location", chooseDownloadLocation.SelectedPath + @"\Spellpad Setup.exe");
+                //        Variables.downloadLocation = ini_GlobalSettings.Read("Program", "Update_Location");
 
-                        string jsonOutput = JsonConvert.SerializeObject(formMain.getUpdateInformation(), Formatting.Indented);
-                        using (StreamWriter writer = new StreamWriter(SettingsPath))
-                        {
-                            writer.Write(jsonOutput);
-                        }
+                //        formMain.getUpdateInformation().UpdateLocation = chooseDownloadLocation.SelectedPath + @"\Spellpad Setup.exe";
+                //        Variables.downloadLocation = formMain.getUpdateInformation().UpdateLocation;
 
-                        _DownloadingDialog = new frm_Downloading(this);
-                        _DownloadingDialog.ShowDialog(this);
-                    }
-                }
+                //        string jsonOutput = JsonConvert.SerializeObject(formMain.getUpdateInformation(), Formatting.Indented);
+                //        using (StreamWriter writer = new StreamWriter(SettingsPath))
+                //        {
+                //            writer.Write(jsonOutput);
+                //        }
+
+                //        frm_GetSpellpad GetSpellpad = new frm_GetSpellpad();
+                //        GetSpellpad.ShowDialog();
+
+                //        _DownloadingDialog = new frm_Downloading(this);
+                //        _DownloadingDialog.ShowDialog(this);
+                //    }
+                //} 
+                #endregion
+
+                frm_GetSpellpad GetSpellpad = new frm_GetSpellpad();
+                GetSpellpad.ShowDialog();
+
             }
             else if (btn_Check.Text == "Install Update")
             {
