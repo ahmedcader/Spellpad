@@ -1,4 +1,4 @@
-# Spellpad
+# [Spellpad](https://cdemha.github.io/Spellpad)
 
 Spellpad is a free word processing tool which includes a built in spellchecker (using the WPF RichTextBox control) and other special features and enhancements which make it better than the default Notepad program but under Microsoft Word. It is well designed and straightforward and comes with a simplistic user interface which makes it easy to use.
 
