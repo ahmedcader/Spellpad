@@ -1140,7 +1140,7 @@ namespace Spellpad.Forms.Spellpad_Forms
             Variables._TextBox.ContextMenu.Items.Insert(index, seperator4);
             index += 1;
             System.Windows.Controls.MenuItem insertBullet = new System.Windows.Controls.MenuItem();
-            insertBullet.Header = "Insert Bullet Point •";
+            insertBullet.Header = "Insert • Bullet Point";
             insertBullet.Click += insertBullet_Click;
             Variables._TextBox.ContextMenu.Items.Insert(index, insertBullet);
             index += 1;
@@ -1163,9 +1163,9 @@ namespace Spellpad.Forms.Spellpad_Forms
 
         private void insertBullet_Click(object sender, RoutedEventArgs e)
         {
-            Variables._TextBox.Text = Variables._TextBox.Text.Insert(Variables._TextBox.SelectionStart, "•" + " ");
-            Variables._TextBox.CaretIndex = Variables._TextBox.Text.LastIndexOf("•" + " ");
-            Variables._TextBox.CaretIndex = Variables._TextBox.Text.LastIndexOf("•" + " ") + 2;
+            Variables._TextBox.SelectedText = "• ";
+            Variables._TextBox.CaretIndex += Variables._TextBox.SelectedText.Length;
+            Variables._TextBox.SelectionLength = 0;
         }
 
         private void insertSymbolMenuItem_Click(object sender, RoutedEventArgs e)
