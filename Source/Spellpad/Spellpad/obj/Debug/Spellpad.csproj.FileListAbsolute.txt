@@ -29,3 +29,4 @@ C:\Users\Ahmed\Dropbox\Programming\Desktop\Visual Studio Projects\Current\Spellp
 C:\Users\Ahmed\Dropbox\Programming\Desktop\Visual Studio Projects\Current\Spellpad\Spellpad\Source\Spellpad\Spellpad\obj\Debug\Spellpad.pdb
 C:\Users\Ahmed\Dropbox\Programming\Desktop\Visual Studio Projects\Current\Spellpad\Spellpad\Source\Spellpad\Spellpad\bin\Debug\Spellpad.pdb
 C:\Users\Ahmed\Dropbox\Programming\Desktop\Visual Studio Projects\Current\Spellpad\Spellpad\Source\Spellpad\Spellpad\obj\Debug\Spellpad.csprojResolveAssemblyReference.cache
+C:\Users\Ahmed\Dropbox\Programming\Desktop\Visual Studio Projects\Current\Spellpad\Spellpad\Source\Spellpad\Spellpad\obj\Debug\Spellpad.Forms.frm_GetSpellpad.resources

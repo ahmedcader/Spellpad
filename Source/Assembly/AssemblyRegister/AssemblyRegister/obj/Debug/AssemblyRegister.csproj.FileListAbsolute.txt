@@ -1,0 +1,4 @@
+C:\Users\Ahmed\Dropbox\Programming\Desktop\Visual Studio Projects\Current\Spellpad\Spellpad\Source\Assembly\AssemblyRegister\AssemblyRegister\bin\Debug\AssemblyRegister.exe
+C:\Users\Ahmed\Dropbox\Programming\Desktop\Visual Studio Projects\Current\Spellpad\Spellpad\Source\Assembly\AssemblyRegister\AssemblyRegister\bin\Debug\AssemblyRegister.pdb
+C:\Users\Ahmed\Dropbox\Programming\Desktop\Visual Studio Projects\Current\Spellpad\Spellpad\Source\Assembly\AssemblyRegister\AssemblyRegister\obj\Debug\AssemblyRegister.exe
+C:\Users\Ahmed\Dropbox\Programming\Desktop\Visual Studio Projects\Current\Spellpad\Spellpad\Source\Assembly\AssemblyRegister\AssemblyRegister\obj\Debug\AssemblyRegister.pdb
