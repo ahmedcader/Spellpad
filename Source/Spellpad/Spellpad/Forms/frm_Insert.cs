@@ -171,9 +171,9 @@ namespace Spellpad.Forms
         private void SymbolButton_Click(object sender, EventArgs e)
         {
             Button btn = (Button)sender;
-            Variables._TextBox.Text = Variables._TextBox.Text.Insert(Variables._TextBox.SelectionStart, btn.Text + " ");
-            Variables._TextBox.CaretIndex = Variables._TextBox.Text.LastIndexOf(btn.Text + " ");
-            Variables._TextBox.CaretIndex = Variables._TextBox.Text.LastIndexOf(btn.Text + " ") + 2;
+            Variables._TextBox.SelectedText = btn.Text + " ";
+            Variables._TextBox.CaretIndex += Variables._TextBox.SelectedText.Length;
+            Variables._TextBox.SelectionLength = 0;
         }
 
         private void frm_Insert_FormClosed(object sender, FormClosedEventArgs e)
