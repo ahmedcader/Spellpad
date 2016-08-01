@@ -25,6 +25,9 @@ AllowNoIcons=yes
 OutputBaseFilename=setup
 Compression=lzma
 SolidCompression=yes
+UninstallDisplayIcon={app}\{#MyAppExeName}
+UninstallDisplayName={#MyAppExeName}
+DisableWelcomePage=no
 
 [Languages]
 Name: "english"; MessagesFile: "compiler:Default.isl"
@@ -45,16 +48,33 @@ Source: "C:\Users\Ahmed\Dropbox\Programming\Desktop\Visual Studio Projects\Curre
 Source: "C:\Users\Ahmed\Dropbox\Programming\Desktop\Visual Studio Projects\Current\Spellpad\Spellpad\Source\Spellpad\Spellpad\bin\Debug\Spellpad.vshost.exe"; DestDir: "{app}"; Flags: ignoreversion
 Source: "C:\Users\Ahmed\Dropbox\Programming\Desktop\Visual Studio Projects\Current\Spellpad\Spellpad\Source\Spellpad\Spellpad\bin\Debug\Spellpad.vshost.exe.config"; DestDir: "{app}"; Flags: ignoreversion
 Source: "C:\Users\Ahmed\Dropbox\Programming\Desktop\Visual Studio Projects\Current\Spellpad\Spellpad\Source\Spellpad\Spellpad\bin\Debug\Spellpad.vshost.exe.manifest"; DestDir: "{app}"; Flags: ignoreversion
+
+Source: "C:\Users\Ahmed\Dropbox\Programming\Desktop\Visual Studio Projects\Current\Spellpad\Spellpad\Source\ContextMenu\bin\Debug\ContextMenu.dll"; DestDir: "{app}"; Flags: ignoreversion
+Source: "C:\Users\Ahmed\Dropbox\Programming\Desktop\Visual Studio Projects\Current\Spellpad\Spellpad\Source\ContextMenu\bin\Debug\SharpShell.dll"; DestDir: "{app}"; Flags: ignoreversion
+
+Source: "C:\Users\Ahmed\Dropbox\Programming\Desktop\Visual Studio Projects\Current\Spellpad\Spellpad\Source\Assembly\AssemblyRegister\AssemblyRegister\bin\Debug\AssemblyRegister.exe"; DestDir: "{app}"; Flags: ignoreversion
+Source: "C:\Users\Ahmed\Dropbox\Programming\Desktop\Visual Studio Projects\Current\Spellpad\Spellpad\Source\Assembly\AssemblyUnregister\AssemblyUnregister\bin\Debug\AssemblyUnregister.exe"; DestDir: "{app}"; Flags: ignoreversion  
 ; NOTE: Don't use "Flags: ignoreversion" on any shared system files
 
 [Registry]
 Root: HKLM; Subkey: "Software\Microsoft\Windows\CurrentVersion\App Paths\{#MyAppName}.exe"; ValueType: string; ValueName: ""; ValueData: "{app}\Spellpad.exe"; Flags: uninsdeletekey
-Root: HKLM; Subkey: "Software\Wow6432Node\{#MyAppName}"; ValueType: string; ValueName: ""; ValueData: "{app}\Spellpad.exe"; Flags: uninsdeletekey 
-
+Root: HKLM; Subkey: "Software\Wow6432Node\{#MyAppName}"; ValueType: string; ValueName: "COMDLLPath"; ValueData: "{app}\ContextMenu.dll"; Flags: uninsdeletekey
+Root: HKLM; Subkey: "Software\Wow6432Node\{#MyAppName}"; ValueType: string; ValueName: "CommandLineArgument"; ValueData: "{app}\Spellpad.exe"; Flags: uninsdeletekey
+Root: HKLM; Subkey: "Software\Wow6432Node\{#MyAppName}"; ValueType: string; ValueName: "CurlyQuotes"; ValueData: "0"; Flags: uninsdeletekey
+Root: HKLM; Subkey: "Software\Wow6432Node\{#MyAppName}"; ValueType: string; ValueName: "Path"; ValueData: "{app}"; Flags: uninsdeletekey    
+Root: HKLM; Subkey: "Software\Wow6432Node\{#MyAppName}"; ValueType: string; ValueName: "Version"; ValueData: "{#MyAppVersion}"; Flags: uninsdeletekey
+                            
 [Icons]
 Name: "{group}\{#MyAppName}"; Filename: "{app}\{#MyAppExeName}"
 Name: "{commondesktop}\{#MyAppName}"; Filename: "{app}\{#MyAppExeName}"; Tasks: desktopicon
 
 [Run]
 Filename: "{app}\{#MyAppExeName}"; Description: "{cm:LaunchProgram,{#StringChange(MyAppName, '&', '&&')}}"; Flags: nowait postinstall skipifsilent
+Filename: "{app}\AssemblyRegister.exe"
+
+[UninstallRun]
+Filename: "{app}\AssemblyUnregister.exe"
+
+[UninstallDelete]
+Type: dirifempty; Name: "{userappdata}\{#MyAppName}"
 
