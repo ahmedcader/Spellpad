@@ -141,7 +141,7 @@
             this.MenuStrip1.Name = "MenuStrip1";
             this.MenuStrip1.Padding = new System.Windows.Forms.Padding(0);
             this.MenuStrip1.RenderMode = System.Windows.Forms.ToolStripRenderMode.Professional;
-            this.MenuStrip1.Size = new System.Drawing.Size(634, 28);
+            this.MenuStrip1.Size = new System.Drawing.Size(634, 24);
             this.MenuStrip1.TabIndex = 5;
             this.MenuStrip1.Text = "MenuStrip1";
             // 
@@ -547,9 +547,10 @@
             this.m_Settings.Alignment = System.Windows.Forms.ToolStripItemAlignment.Right;
             this.m_Settings.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
             this.m_Settings.Image = global::Spellpad.Properties.Resources.settings;
+            this.m_Settings.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
             this.m_Settings.ImageTransparentColor = System.Drawing.Color.Purple;
             this.m_Settings.Name = "m_Settings";
-            this.m_Settings.Size = new System.Drawing.Size(36, 28);
+            this.m_Settings.Size = new System.Drawing.Size(28, 24);
             this.m_Settings.Text = "Settings";
             this.m_Settings.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
             this.m_Settings.Click += new System.EventHandler(this.m_Settings_Click);
@@ -715,7 +716,7 @@
             this.ts_s4,
             this.ts_Find,
             this.ts_Replace});
-            this.mainToolbar.Location = new System.Drawing.Point(0, 28);
+            this.mainToolbar.Location = new System.Drawing.Point(0, 24);
             this.mainToolbar.Name = "mainToolbar";
             this.mainToolbar.Padding = new System.Windows.Forms.Padding(8, 0, 1, 0);
             this.mainToolbar.Size = new System.Drawing.Size(634, 39);
@@ -908,9 +909,9 @@
             // elementHost1
             // 
             this.elementHost1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.elementHost1.Location = new System.Drawing.Point(0, 67);
+            this.elementHost1.Location = new System.Drawing.Point(0, 63);
             this.elementHost1.Name = "elementHost1";
-            this.elementHost1.Size = new System.Drawing.Size(634, 469);
+            this.elementHost1.Size = new System.Drawing.Size(634, 473);
             this.elementHost1.TabIndex = 7;
             this.elementHost1.Text = "elementHost1";
             this.elementHost1.Child = this.richTextBox1;
