@@ -114,9 +114,9 @@
             this.PrintDoc = new System.Drawing.Printing.PrintDocument();
             this.PrintDialog = new System.Windows.Forms.PrintDialog();
             this.PageSetupDialog = new System.Windows.Forms.PageSetupDialog();
+            this.bgwCheckUpdate = new System.ComponentModel.BackgroundWorker();
             this.elementHost1 = new System.Windows.Forms.Integration.ElementHost();
             this.richTextBox1 = new Spellpad.richTextBox();
-            this.bgwCheckUpdate = new System.ComponentModel.BackgroundWorker();
             this.MenuStrip1.SuspendLayout();
             this._StatusBar.SuspendLayout();
             this.mainToolbar.SuspendLayout();
@@ -163,7 +163,7 @@
             this.m_Exit});
             this.FileToolStripMenuItem.Name = "FileToolStripMenuItem";
             this.FileToolStripMenuItem.Padding = new System.Windows.Forms.Padding(10, 0, 4, 0);
-            this.FileToolStripMenuItem.Size = new System.Drawing.Size(43, 28);
+            this.FileToolStripMenuItem.Size = new System.Drawing.Size(43, 24);
             this.FileToolStripMenuItem.Text = "File";
             this.FileToolStripMenuItem.Click += new System.EventHandler(this.FileToolStripMenuItem_Click);
             // 
@@ -192,6 +192,7 @@
             // m_Open
             // 
             this.m_Open.Image = ((System.Drawing.Image)(resources.GetObject("m_Open.Image")));
+            this.m_Open.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
             this.m_Open.Name = "m_Open";
             this.m_Open.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.O)));
             this.m_Open.Size = new System.Drawing.Size(173, 22);
@@ -313,7 +314,7 @@
             this.m_SelectAll,
             this.m_TimeDate});
             this.EditToolStripMenuItem.Name = "EditToolStripMenuItem";
-            this.EditToolStripMenuItem.Size = new System.Drawing.Size(39, 28);
+            this.EditToolStripMenuItem.Size = new System.Drawing.Size(39, 24);
             this.EditToolStripMenuItem.Text = "Edit";
             this.EditToolStripMenuItem.DropDownOpening += new System.EventHandler(this.EditToolStripMenuItem_DropDownOpening);
             // 
@@ -461,7 +462,7 @@
             this.btn_TextCasing,
             this.m_Insert});
             this.btn_Format.Name = "btn_Format";
-            this.btn_Format.Size = new System.Drawing.Size(57, 28);
+            this.btn_Format.Size = new System.Drawing.Size(57, 24);
             this.btn_Format.Text = "Format";
             // 
             // m_WordWrap
@@ -558,7 +559,7 @@
             // m_Settings2
             // 
             this.m_Settings2.Name = "m_Settings2";
-            this.m_Settings2.Size = new System.Drawing.Size(61, 28);
+            this.m_Settings2.Size = new System.Drawing.Size(61, 24);
             this.m_Settings2.Text = "Settings";
             this.m_Settings2.Click += new System.EventHandler(this.m_Settings_Click);
             // 
@@ -571,14 +572,14 @@
             this.ToolStripSeparator7,
             this.m_About});
             this.HelpToolStripMenuItem.Name = "HelpToolStripMenuItem";
-            this.HelpToolStripMenuItem.Size = new System.Drawing.Size(44, 28);
+            this.HelpToolStripMenuItem.Size = new System.Drawing.Size(44, 24);
             this.HelpToolStripMenuItem.Text = "Help";
             // 
             // m_Feedback
             // 
             this.m_Feedback.Enabled = false;
             this.m_Feedback.Name = "m_Feedback";
-            this.m_Feedback.Size = new System.Drawing.Size(152, 22);
+            this.m_Feedback.Size = new System.Drawing.Size(137, 22);
             this.m_Feedback.Text = "Feedback";
             this.m_Feedback.Visible = false;
             this.m_Feedback.Click += new System.EventHandler(this.m_Feedback_Click);
@@ -587,7 +588,7 @@
             // 
             this.m_WhatsNew.Enabled = false;
             this.m_WhatsNew.Name = "m_WhatsNew";
-            this.m_WhatsNew.Size = new System.Drawing.Size(152, 22);
+            this.m_WhatsNew.Size = new System.Drawing.Size(137, 22);
             this.m_WhatsNew.Text = "What\'s New";
             this.m_WhatsNew.Visible = false;
             this.m_WhatsNew.Click += new System.EventHandler(this.m_WhatsNew_Click);
@@ -595,19 +596,19 @@
             // m_Updates
             // 
             this.m_Updates.Name = "m_Updates";
-            this.m_Updates.Size = new System.Drawing.Size(152, 22);
+            this.m_Updates.Size = new System.Drawing.Size(137, 22);
             this.m_Updates.Text = "Updates";
             this.m_Updates.Click += new System.EventHandler(this.m_Updates_Click);
             // 
             // ToolStripSeparator7
             // 
             this.ToolStripSeparator7.Name = "ToolStripSeparator7";
-            this.ToolStripSeparator7.Size = new System.Drawing.Size(149, 6);
+            this.ToolStripSeparator7.Size = new System.Drawing.Size(134, 6);
             // 
             // m_About
             // 
             this.m_About.Name = "m_About";
-            this.m_About.Size = new System.Drawing.Size(152, 22);
+            this.m_About.Size = new System.Drawing.Size(137, 22);
             this.m_About.Text = "About";
             this.m_About.Click += new System.EventHandler(this.m_About_Click);
             // 
@@ -615,7 +616,7 @@
             // 
             this.ts_UpdAvl.Alignment = System.Windows.Forms.ToolStripItemAlignment.Right;
             this.ts_UpdAvl.Name = "ts_UpdAvl";
-            this.ts_UpdAvl.Size = new System.Drawing.Size(108, 28);
+            this.ts_UpdAvl.Size = new System.Drawing.Size(108, 24);
             this.ts_UpdAvl.Text = "Update Available";
             this.ts_UpdAvl.Visible = false;
             this.ts_UpdAvl.Click += new System.EventHandler(this.ts_UpdAvl_Click);
@@ -623,7 +624,7 @@
             // btn_SpecialReplace
             // 
             this.btn_SpecialReplace.Name = "btn_SpecialReplace";
-            this.btn_SpecialReplace.Size = new System.Drawing.Size(60, 28);
+            this.btn_SpecialReplace.Size = new System.Drawing.Size(60, 24);
             this.btn_SpecialReplace.Text = "Replace";
             this.btn_SpecialReplace.ToolTipText = "Replace all curly quotes with straight quotes";
             this.btn_SpecialReplace.Visible = false;
@@ -906,6 +907,12 @@
             this.PageSetupDialog.Document = this.PrintDoc;
             this.PageSetupDialog.EnableMetric = true;
             // 
+            // bgwCheckUpdate
+            // 
+            this.bgwCheckUpdate.WorkerSupportsCancellation = true;
+            this.bgwCheckUpdate.DoWork += new System.ComponentModel.DoWorkEventHandler(this.bgwCheckUpdate_DoWork);
+            this.bgwCheckUpdate.RunWorkerCompleted += new System.ComponentModel.RunWorkerCompletedEventHandler(this.bgwCheckUpdate_RunWorkerCompleted);
+            // 
             // elementHost1
             // 
             this.elementHost1.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -915,12 +922,6 @@
             this.elementHost1.TabIndex = 7;
             this.elementHost1.Text = "elementHost1";
             this.elementHost1.Child = this.richTextBox1;
-            // 
-            // bgwCheckUpdate
-            // 
-            this.bgwCheckUpdate.WorkerSupportsCancellation = true;
-            this.bgwCheckUpdate.DoWork += new System.ComponentModel.DoWorkEventHandler(this.bgwCheckUpdate_DoWork);
-            this.bgwCheckUpdate.RunWorkerCompleted += new System.ComponentModel.RunWorkerCompletedEventHandler(this.bgwCheckUpdate_RunWorkerCompleted);
             // 
             // frm_Main
             // 
