@@ -579,6 +579,7 @@
             this.m_Feedback.Name = "m_Feedback";
             this.m_Feedback.Size = new System.Drawing.Size(152, 22);
             this.m_Feedback.Text = "Feedback";
+            this.m_Feedback.Visible = false;
             this.m_Feedback.Click += new System.EventHandler(this.m_Feedback_Click);
             // 
             // m_WhatsNew
@@ -587,6 +588,7 @@
             this.m_WhatsNew.Name = "m_WhatsNew";
             this.m_WhatsNew.Size = new System.Drawing.Size(152, 22);
             this.m_WhatsNew.Text = "What\'s New";
+            this.m_WhatsNew.Visible = false;
             this.m_WhatsNew.Click += new System.EventHandler(this.m_WhatsNew_Click);
             // 
             // m_Updates
