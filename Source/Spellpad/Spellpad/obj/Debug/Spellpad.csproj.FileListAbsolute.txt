@@ -1,5 +1,6 @@
-C:\Users\Ahmed\Dropbox\Programming\Desktop\Visual Studio Projects\Current\Spellpad\Spellpad\Source\Spellpad\Spellpad\bin\Debug\Spellpad.exe
 C:\Users\Ahmed\Dropbox\Programming\Desktop\Visual Studio Projects\Current\Spellpad\Spellpad\Source\Spellpad\Spellpad\bin\Debug\Spellpad.exe.config
+C:\Users\Ahmed\Dropbox\Programming\Desktop\Visual Studio Projects\Current\Spellpad\Spellpad\Source\Spellpad\Spellpad\bin\Debug\Spellpad.exe
+C:\Users\Ahmed\Dropbox\Programming\Desktop\Visual Studio Projects\Current\Spellpad\Spellpad\Source\Spellpad\Spellpad\bin\Debug\Spellpad.pdb
 C:\Users\Ahmed\Dropbox\Programming\Desktop\Visual Studio Projects\Current\Spellpad\Spellpad\Source\Spellpad\Spellpad\bin\Debug\MessageBoxManager.dll
 C:\Users\Ahmed\Dropbox\Programming\Desktop\Visual Studio Projects\Current\Spellpad\Spellpad\Source\Spellpad\Spellpad\bin\Debug\Microsoft.VisualStudio.QualityTools.UnitTestFramework.dll
 C:\Users\Ahmed\Dropbox\Programming\Desktop\Visual Studio Projects\Current\Spellpad\Spellpad\Source\Spellpad\Spellpad\obj\Debug\ElementHost Controls\richTextBox.baml
@@ -17,6 +18,7 @@ C:\Users\Ahmed\Dropbox\Programming\Desktop\Visual Studio Projects\Current\Spellp
 C:\Users\Ahmed\Dropbox\Programming\Desktop\Visual Studio Projects\Current\Spellpad\Spellpad\Source\Spellpad\Spellpad\obj\Debug\Spellpad.Forms.frm_EditRecents.resources
 C:\Users\Ahmed\Dropbox\Programming\Desktop\Visual Studio Projects\Current\Spellpad\Spellpad\Source\Spellpad\Spellpad\obj\Debug\Spellpad.Forms.frm_EditSymbols.resources
 C:\Users\Ahmed\Dropbox\Programming\Desktop\Visual Studio Projects\Current\Spellpad\Spellpad\Source\Spellpad\Spellpad\obj\Debug\Spellpad.Forms.frm_FindReplace.resources
+C:\Users\Ahmed\Dropbox\Programming\Desktop\Visual Studio Projects\Current\Spellpad\Spellpad\Source\Spellpad\Spellpad\obj\Debug\Spellpad.Forms.frm_GetSpellpad.resources
 C:\Users\Ahmed\Dropbox\Programming\Desktop\Visual Studio Projects\Current\Spellpad\Spellpad\Source\Spellpad\Spellpad\obj\Debug\Spellpad.Forms.frm_Insert.resources
 C:\Users\Ahmed\Dropbox\Programming\Desktop\Visual Studio Projects\Current\Spellpad\Spellpad\Source\Spellpad\Spellpad\obj\Debug\Spellpad.Forms.Spellpad_Forms.frm_Main.resources
 C:\Users\Ahmed\Dropbox\Programming\Desktop\Visual Studio Projects\Current\Spellpad\Spellpad\Source\Spellpad\Spellpad\obj\Debug\Spellpad.Forms.frm_RenameDictionary.resources
@@ -27,6 +29,4 @@ C:\Users\Ahmed\Dropbox\Programming\Desktop\Visual Studio Projects\Current\Spellp
 C:\Users\Ahmed\Dropbox\Programming\Desktop\Visual Studio Projects\Current\Spellpad\Spellpad\Source\Spellpad\Spellpad\obj\Debug\Spellpad.csproj.GenerateResource.Cache
 C:\Users\Ahmed\Dropbox\Programming\Desktop\Visual Studio Projects\Current\Spellpad\Spellpad\Source\Spellpad\Spellpad\obj\Debug\Spellpad.exe
 C:\Users\Ahmed\Dropbox\Programming\Desktop\Visual Studio Projects\Current\Spellpad\Spellpad\Source\Spellpad\Spellpad\obj\Debug\Spellpad.pdb
-C:\Users\Ahmed\Dropbox\Programming\Desktop\Visual Studio Projects\Current\Spellpad\Spellpad\Source\Spellpad\Spellpad\bin\Debug\Spellpad.pdb
 C:\Users\Ahmed\Dropbox\Programming\Desktop\Visual Studio Projects\Current\Spellpad\Spellpad\Source\Spellpad\Spellpad\obj\Debug\Spellpad.csprojResolveAssemblyReference.cache
-C:\Users\Ahmed\Dropbox\Programming\Desktop\Visual Studio Projects\Current\Spellpad\Spellpad\Source\Spellpad\Spellpad\obj\Debug\Spellpad.Forms.frm_GetSpellpad.resources
