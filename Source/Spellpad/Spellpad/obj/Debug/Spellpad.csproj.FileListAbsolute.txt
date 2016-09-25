@@ -30,3 +30,35 @@ C:\Users\Ahmed\Dropbox\Programming\Desktop\Visual Studio Projects\Current\Spellp
 C:\Users\Ahmed\Dropbox\Programming\Desktop\Visual Studio Projects\Current\Spellpad\Spellpad\Source\Spellpad\Spellpad\obj\Debug\Spellpad.exe
 C:\Users\Ahmed\Dropbox\Programming\Desktop\Visual Studio Projects\Current\Spellpad\Spellpad\Source\Spellpad\Spellpad\obj\Debug\Spellpad.pdb
 C:\Users\Ahmed\Dropbox\Programming\Desktop\Visual Studio Projects\Current\Spellpad\Spellpad\Source\Spellpad\Spellpad\obj\Debug\Spellpad.csprojResolveAssemblyReference.cache
+C:\Users\Ahmed\Google Drive\Personal\Code\Visual Studio Projects\Current\Spellpad\Spellpad\Source\Spellpad\Spellpad\bin\Debug\Spellpad.exe.config
+C:\Users\Ahmed\Google Drive\Personal\Code\Visual Studio Projects\Current\Spellpad\Spellpad\Source\Spellpad\Spellpad\obj\Debug\Spellpad.exe
+C:\Users\Ahmed\Google Drive\Personal\Code\Visual Studio Projects\Current\Spellpad\Spellpad\Source\Spellpad\Spellpad\obj\Debug\Spellpad.pdb
+C:\Users\Ahmed\Google Drive\Personal\Code\Visual Studio Projects\Current\Spellpad\Spellpad\Source\Spellpad\Spellpad\bin\Debug\Spellpad.exe
+C:\Users\Ahmed\Google Drive\Personal\Code\Visual Studio Projects\Current\Spellpad\Spellpad\Source\Spellpad\Spellpad\bin\Debug\Spellpad.pdb
+C:\Users\Ahmed\Google Drive\Personal\Code\Visual Studio Projects\Current\Spellpad\Spellpad\Source\Spellpad\Spellpad\bin\Debug\MessageBoxManager.dll
+C:\Users\Ahmed\Google Drive\Personal\Code\Visual Studio Projects\Current\Spellpad\Spellpad\Source\Spellpad\Spellpad\bin\Debug\Microsoft.VisualStudio.QualityTools.UnitTestFramework.dll
+C:\Users\Ahmed\Google Drive\Personal\Code\Visual Studio Projects\Current\Spellpad\Spellpad\Source\Spellpad\Spellpad\obj\Debug\Spellpad.csprojResolveAssemblyReference.cache
+C:\Users\Ahmed\Google Drive\Personal\Code\Visual Studio Projects\Current\Spellpad\Spellpad\Source\Spellpad\Spellpad\obj\Debug\ElementHost Controls\richTextBox.baml
+C:\Users\Ahmed\Google Drive\Personal\Code\Visual Studio Projects\Current\Spellpad\Spellpad\Source\Spellpad\Spellpad\obj\Debug\ElementHost Controls\Combobox.g.cs
+C:\Users\Ahmed\Google Drive\Personal\Code\Visual Studio Projects\Current\Spellpad\Spellpad\Source\Spellpad\Spellpad\obj\Debug\ElementHost Controls\richTextBox.g.cs
+C:\Users\Ahmed\Google Drive\Personal\Code\Visual Studio Projects\Current\Spellpad\Spellpad\Source\Spellpad\Spellpad\obj\Debug\Spellpad_Content.g.cs
+C:\Users\Ahmed\Google Drive\Personal\Code\Visual Studio Projects\Current\Spellpad\Spellpad\Source\Spellpad\Spellpad\obj\Debug\Spellpad_MarkupCompile.cache
+C:\Users\Ahmed\Google Drive\Personal\Code\Visual Studio Projects\Current\Spellpad\Spellpad\Source\Spellpad\Spellpad\obj\Debug\Spellpad_MarkupCompile.lref
+C:\Users\Ahmed\Google Drive\Personal\Code\Visual Studio Projects\Current\Spellpad\Spellpad\Source\Spellpad\Spellpad\obj\Debug\ElementHost Controls\Combobox.baml
+C:\Users\Ahmed\Google Drive\Personal\Code\Visual Studio Projects\Current\Spellpad\Spellpad\Source\Spellpad\Spellpad\obj\Debug\Spellpad.g.resources
+C:\Users\Ahmed\Google Drive\Personal\Code\Visual Studio Projects\Current\Spellpad\Spellpad\Source\Spellpad\Spellpad\obj\Debug\Spellpad.Forms.frmWhatsNew.resources
+C:\Users\Ahmed\Google Drive\Personal\Code\Visual Studio Projects\Current\Spellpad\Spellpad\Source\Spellpad\Spellpad\obj\Debug\Spellpad.Forms.frm_About.resources
+C:\Users\Ahmed\Google Drive\Personal\Code\Visual Studio Projects\Current\Spellpad\Spellpad\Source\Spellpad\Spellpad\obj\Debug\Spellpad.Forms.frm_Downloading.resources
+C:\Users\Ahmed\Google Drive\Personal\Code\Visual Studio Projects\Current\Spellpad\Spellpad\Source\Spellpad\Spellpad\obj\Debug\Spellpad.Forms.Spellpad_Forms.frm_EditDictionary.resources
+C:\Users\Ahmed\Google Drive\Personal\Code\Visual Studio Projects\Current\Spellpad\Spellpad\Source\Spellpad\Spellpad\obj\Debug\Spellpad.Forms.frm_EditRecents.resources
+C:\Users\Ahmed\Google Drive\Personal\Code\Visual Studio Projects\Current\Spellpad\Spellpad\Source\Spellpad\Spellpad\obj\Debug\Spellpad.Forms.frm_EditSymbols.resources
+C:\Users\Ahmed\Google Drive\Personal\Code\Visual Studio Projects\Current\Spellpad\Spellpad\Source\Spellpad\Spellpad\obj\Debug\Spellpad.Forms.frm_FindReplace.resources
+C:\Users\Ahmed\Google Drive\Personal\Code\Visual Studio Projects\Current\Spellpad\Spellpad\Source\Spellpad\Spellpad\obj\Debug\Spellpad.Forms.frm_GetSpellpad.resources
+C:\Users\Ahmed\Google Drive\Personal\Code\Visual Studio Projects\Current\Spellpad\Spellpad\Source\Spellpad\Spellpad\obj\Debug\Spellpad.Forms.frm_Insert.resources
+C:\Users\Ahmed\Google Drive\Personal\Code\Visual Studio Projects\Current\Spellpad\Spellpad\Source\Spellpad\Spellpad\obj\Debug\Spellpad.Forms.Spellpad_Forms.frm_Main.resources
+C:\Users\Ahmed\Google Drive\Personal\Code\Visual Studio Projects\Current\Spellpad\Spellpad\Source\Spellpad\Spellpad\obj\Debug\Spellpad.Forms.frm_RenameDictionary.resources
+C:\Users\Ahmed\Google Drive\Personal\Code\Visual Studio Projects\Current\Spellpad\Spellpad\Source\Spellpad\Spellpad\obj\Debug\Spellpad.Forms.Spellpad_Forms.frm_Settings.resources
+C:\Users\Ahmed\Google Drive\Personal\Code\Visual Studio Projects\Current\Spellpad\Spellpad\Source\Spellpad\Spellpad\obj\Debug\Spellpad.Forms.frm_Updates.resources
+C:\Users\Ahmed\Google Drive\Personal\Code\Visual Studio Projects\Current\Spellpad\Spellpad\Source\Spellpad\Spellpad\obj\Debug\Spellpad.frm_Feedback.resources
+C:\Users\Ahmed\Google Drive\Personal\Code\Visual Studio Projects\Current\Spellpad\Spellpad\Source\Spellpad\Spellpad\obj\Debug\Spellpad.Properties.Resources.resources
+C:\Users\Ahmed\Google Drive\Personal\Code\Visual Studio Projects\Current\Spellpad\Spellpad\Source\Spellpad\Spellpad\obj\Debug\Spellpad.csproj.GenerateResource.Cache
